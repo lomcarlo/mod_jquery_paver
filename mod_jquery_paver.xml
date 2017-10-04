@@ -18,26 +18,28 @@
 	<folder>language</folder>
   </files>
   <languages>
-    <language tag="en-GB">language/en-GB.mod_jquery_paver.sys.ini</language>
-    <language tag="it-IT">language/it-IT.mod_jquery_paver.sys.ini</language>
-  </languages>    
+    <language tag="en-GB">language/en-GB.mod_jquery_paver.ini</language>
+    <language tag="it-IT">language/it-IT.mod_jquery_paver.ini</language>
+  </languages>
   <config>
     <fields name="params">
-      <field name="width" type="text" default="500" size="40" label="MOD_JQUERY_PAVER_WIDTH_LABEL" description="MOD_JQUERY_PAVER_WIDTH_DESC" />
-      <field name="height" type="text" default="300" size="40" label="MOD_JQUERY_PAVER_HEIGHT_LABEL" description="MOD_JQUERY_PAVER_HEIGHT_DESC" />
-      <field name="imagePath" type="media" directory="" description="MOD_JQUERY_PAVER_MEDIA_DESC" />
-      <field name="meta" type="radio" default="0" label="MOD_JQUERY_PAVER_META_LABEL" description="MOD_JQUERY_PAVER_META_DESC" class="btn-group btn-group-yesno">
-        <option value="">JNO</option>
-        <option value="0">MOD_JQUERY_PAVER_META_LEFT</option>
-        <option value="1">MOD_JQUERY_PAVER_META_CENTER</option>
-        <option value="2">MOD_JQUERY_PAVER_META_BOTTOM</option>
-      </field>
-      <field name="title" type="text" default="" size="40" label="MOD_JQUERY_PAVER_TITLE_LABEL" description="MOD_JQUERY_PAVER_TITLE_DESC" />
-      <field name="description" type="textarea" default="" filter="safehtml" rows="3"	cols="40" label="MOD_JQUERY_PAVER_DESCRIPTION_LABEL" description="MOD_JQUERY_PAVER_DESCRIPTION_DESC" />
-      <field name="loadJquery" type="radio" default="0" label="MOD_JQUERY_PAVER_JQUERY_LABEL" description="MOD_JQUERY_PAVER_JQUERY_DESC" class="btn-group btn-group-yesno">
-        <option value="1">JYES</option>
-        <option value="0">JNO</option>
-      </field>
+      <fieldset name="settings" label="MOD_JQUERY_PAVER_SETTINGS_LABEL">
+        <field name="width" type="text" default="500" size="40" label="MOD_JQUERY_PAVER_WIDTH_LABEL" description="MOD_JQUERY_PAVER_WIDTH_DESC" />
+        <field name="height" type="text" default="300" size="40" label="MOD_JQUERY_PAVER_HEIGHT_LABEL" description="MOD_JQUERY_PAVER_HEIGHT_DESC" />
+        <field name="imagePath" type="media" directory="" description="MOD_JQUERY_PAVER_MEDIA_DESC" />
+        <field name="meta" type="radio" default="0" label="MOD_JQUERY_PAVER_META_LABEL" description="MOD_JQUERY_PAVER_META_DESC" class="btn-group btn-group-yesno">
+          <option value="">JNO</option>
+          <option value="0">MOD_JQUERY_PAVER_META_LEFT</option>
+          <option value="1">MOD_JQUERY_PAVER_META_CENTER</option>
+          <option value="2">MOD_JQUERY_PAVER_META_BOTTOM</option>
+        </field>
+        <field name="title" type="text" default="" size="40" label="MOD_JQUERY_PAVER_TITLE_LABEL" description="MOD_JQUERY_PAVER_TITLE_DESC" />
+        <field name="description" type="textarea" default="" filter="safehtml" rows="3"	cols="40" label="MOD_JQUERY_PAVER_DESCRIPTION_LABEL" description="MOD_JQUERY_PAVER_DESCRIPTION_DESC" />
+        <field name="loadJquery" type="radio" default="0" label="MOD_JQUERY_PAVER_JQUERY_LABEL" description="MOD_JQUERY_PAVER_JQUERY_DESC" class="btn-group btn-group-yesno">
+          <option value="1">JYES</option>
+          <option value="0">JNO</option>
+        </field>
+      </fieldset>
 		</fields>
   </config>
 </extension>
