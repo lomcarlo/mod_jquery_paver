@@ -26,7 +26,7 @@ class ModPaverHelper
     {
       $alt = ($param->('title')!='') ? $param->('title') : 'MOD_JQUERY_PAVER_DEFAULT_ALT';
         $html = '<div class="panorama">
-                    <img src="'.$params->get('imagePath')." alt="'.$alt.'" title="'.$alt.'" />
+                    <img src="'.$params->get('imagePath').'" alt="'.$alt.'" title="'.$alt.'" />
                 </div>';
         return $html;
     }
